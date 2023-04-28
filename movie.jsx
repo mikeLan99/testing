@@ -1,6 +1,7 @@
 import React from "react";
 
-const arr = ["kabee", "suraj", "arsh"];
+// made some changes to the arr with new names added
+const arr = ["kabee", "suraj", "arsh", "sinha ", "mikelan"];
 
 const Movie = () => {
   return (
