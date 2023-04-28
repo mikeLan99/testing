@@ -1,20 +1,19 @@
 class Solution {
 public:
-    int longestCommonSubsequence(string text1, string text2) {
+ // suraj made some changes to variable in dp question and removed some uselss comments
+ 
+    int longestCommonSubsequence(string a, string b) {
 
-        int n = text1.size();
-        int m = text2.size();
+        int n = a.size();
+        int m = b.size();
 
         vector<vector<int>>dp(n+1,vector<int>(m+1));
-
-        // base case 
-        // no need to fill zeroes at whole matrix is 0 initially 
 
         for(int i=1 ; i<=n ; i++)
         {
             for(int j=1 ; j<=m ; j++)
             {
-                if(text1[i-1]==text2[j-1])
+                if(a[i-1]==b[j-1])
                 {
                     dp[i][j] = 1 + dp[i-1][j-1];
                 }
