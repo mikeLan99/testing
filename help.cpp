@@ -9,12 +9,11 @@ int main()
 vector<int>v;
 
 // kabeer added this : 
-// we have to sort the array to get the correct answer
-  
- 
- 
-  sort(v.begin(),v.end());
 
+// we have to sort the array descending to get the correct answer
+
+
+sort(v.begin(),v.end(),greater<int>());
 
 for(int i=0 ; i<v.size() ; i++)
 {
